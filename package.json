@@ -3,8 +3,9 @@
   "version": "11.0.10",
   "description": "To be able to create a FDA-style nutrition label with any nutrition data source",
   "main": "nutritionLabel-min.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "nutrition-label-jquery-plugin": "^11.0.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +22,7 @@
     "fda",
     "label",
     "food-label"
-	],
+  ],
   "author": "Leo Joseph Gajitos <leejay22@gmail.com>",
   "license": "MIT",
   "bugs": {
