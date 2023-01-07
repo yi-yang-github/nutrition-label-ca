@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>2018 Version Demo Page</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+	<link rel='stylesheet' type='text/css' media='all' href='../../nutritionLabel-min.css'>
+	<link rel='stylesheet' type='text/css' media='all' href='./../css/demo.css'>
+
+	<!-- google webfont for nutrition label -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Archivo+Black" />
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3 col-md-2 sidebar">
+			<ul class="nav nav-sidebar">
+				<li><a href="../demo.html"><i class="icon-chevron-right"></i> Back to Demo Page</a></li>
+
+				<li><a href="#test1"><i class="icon-chevron-right"></i> Example 1</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="row">
+				<div class="col-md-4">
+					<div id="test1"></div>
+				</div>
+				<div class="col-md-8">
+					<h3>Example #1</h3>
+					<p>Most basic use of the plugin</p>
+					<pre id="pre1">$('#test1').nutritionLabel({showLegacyVersion : false});</pre>
+				</div>
+			</div><br/><br/>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../nutritionLabel-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	eval( eval( $('#pre1').html() ) );
+});
+</script>
+
+</body>
+</html>
