@@ -27,7 +27,7 @@
 				<div class="col-md-8">
 					<h3>Example #1</h3>
 					<p>Most basic use of the plugin</p>
-					<pre id="pre1">$('#test1').nutritionLabel({showLegacyVersion : false});</pre>
+					<pre id="pre1"></pre>
 				</div>
 			</div><br/><br/>
 		</div>
@@ -38,7 +38,13 @@
 <script type="text/javascript" src="../../nutritionLabel-min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-	eval( eval( $('#pre1').html() ) );
+    function funcTest1() {
+        $('#test1').nutritionLabel({showLegacyVersion : false});
+    }
+    const sourceCode = funcTest1.toString();
+    const sourceCodeWithoutFunction = sourceCode.substring(sourceCode.indexOf("{") + 1, sourceCode.lastIndexOf("}"));
+    $('#pre1').text(sourceCodeWithoutFunction);
+    funcTest1();
 });
 </script>
 
